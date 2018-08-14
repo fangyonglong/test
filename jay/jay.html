@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=1280">
+<title>周杰伦</title>
+<link rel="stylesheet" type="text/css" href="jay.css" />
+<script>
+window.onload=function()
+{
+	var aDiv=document.getElementById("picc");
+    var aImg=aDiv.getElementsByTagName('img');
+	var aCir=document.getElementById("circle");
+    var aCimg=aCir.getElementsByTagName('img');
+	var number=1;
+	function tick() {
+	     if(number==5)
+		{
+			number=0;
+		}	
+		
+		for(j=0;j<aImg.length;j++)
+		{
+			aImg[j].style.display="none";
+		}
+		aImg[number].style.display="block";
+		for(k=0;k<aImg.length;k++)
+		{
+			aCimg[k].src="1.gif";
+		}
+		aCimg[number].src="2.gif";
+		number++;
+			
+	}
+	
+	var timer=setInterval(tick, 1000);
+	for(i=0;i<aImg.length;i++)
+	{
+		aImg[i].onmouseover=function()
+		{
+			clearInterval(timer);
+		}
+	}
+	for(i=0;i<aImg.length;i++)
+	{
+		aImg[i].onmouseout=aCimg[i].onmouseout=function()
+		{
+			clearInterval(timer);
+			timer=setInterval(tick, 1000);
+		}
+	}
+	for(i=0;i<aCimg.length;i++)
+	{
+		aCimg[i].index=i;
+		aCimg[i].onclick=function()
+		{
+			
+			clearInterval(timer);
+			for(j=0;j<aCimg.length;j++)
+			{
+				aCimg[j].src="1.gif";
+				aImg[j].style.display="none";
+			}
+		 this.src='2.gif';
+		 aImg[this.index].style.display="block";
+		 number=this.index+1;
+		}
+	}
+}
+</script>
+</head>
+
+<body>
+<div id="firs_t" style="background-color:white;height:80px;width:1080px;margin:0 auto;position:relative">
+  <div id="img"><img src="zhoujielun.jpg"</div>
+  <div id="xinxi">
+  <img src="contact.jpg" /><a href="../test.html"> Contact </a>| <img src="faq.jpg" /><a href="../test.html"> FAQ </a>| <img src="site.jpg" /><a href="../test.html"> Sitemap</a>
+  </div>
+</div>
+</div>
+<div id="top">
+  <div id="daohang">
+    <ol>
+      <a href="../test.html"><li>首页</li></a>
+      <a href="../test.html"><li>个人信息</li></a>
+      <a href="../test.html"><li>经典作品</li></a>
+     <a href="../test.html"><li>荣誉之至</li></a>
+      <a href="../test.html"><li>在线音乐</li></a>
+      <a href="../test.html"><a href="../test.html"><li>演唱现场</li></a>
+    </ol>
+    <div id="input">
+      <form action="../test.html">
+      <input class="text" type="text" name="serch" /><input class="btn" type="submit" value="GO"/></form>
+    </div>
+  </div>
+</div>
+<div id="bar">
+  
+  <div id="jay">
+    <div id="word">
+    <span>
+    <h1>周杰伦</h1>
+    <h3>Jay Chou</h3>
+    中国台湾流行乐男歌手、音乐人、演员、导演、编剧、监制、商人</br></br>
+    2000年横空出世，出道即巅峰</br></br>
+    创作怪才，无数作品震撼了整个华语乐坛</br></br>
+    现在的人都说，他代表了一个时代......</br></br>
+    </span>
+    </div>
+    <div id="picc">
+      <img id="first_img" style="display:block;" src="jay_1.jpg" /><img id="second_img" src="jay_2.jpg" /><img id="third_img" src="jay_3.jpg" /><img id="fourth_img" src="jay_4.jpg" /><img id="fifth_img" src="jay_5.jpg" /></div>
+      <div id="circle">
+       <img id="first" src="2.gif" /><img id="second" src="1.gif" /><img id="third" src="1.gif" /><img id="fourth" src="1.gif" /><img id="fifth"src="1.gif" />
+      </div>
+    
+ 
+  </div>
+</div>
+<div id="content">
+  <div id="left_top">
+  <img src="goto.jpg" /> <span style="color:#666;font-weight:bold;font-size:24px">Welcome to </span><span style="vertical-align:top;color:#fd9efc;font-size:24px">Jay Chou.com</span></br>
+  周杰伦（Jay Chou），1979年1月18日出生于台湾省新北市，华语男歌手、词曲创作人、演员、MV及电影导演、编剧及制作人。
+2000年，发行首张个人专辑《Jay》，正式出道。随后又发行了多张专辑，创作出了了许多脍炙人口的歌曲，比如，双截棍、东风破、夜曲、菊花台、千里之外、青花瓷......2000年后亚洲流行乐坛最具革命性与指标性创作歌手，唱片亚洲总销量超过3100万张，有“亚洲流行天王”之称，其音乐突破原有亚洲音乐主题、形式，融合多元的音乐素材，开创了华语流行音乐“中国风”的先声，为亚洲流行乐坛翻开了新的一页。</br>
+<a style="color:#fd9efc;text-decoration:none"href="#">more</a></br></br>
+
+  </div>
+  
+  <div id="right_top"></br>
+    <table>
+      <tr>
+        <td style="text-align:right;">个人账户:</td>
+        <td><input type="text" name="username"/></td>
+      </tr>
+      <tr>
+        <td style="text-align:right;">登陆密码:</td>
+        <td><input type="text" name="password"/></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input style="padding:0;margin:0" type="checkbox" name="remember" />记住密码</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>忘记密码？点击找回</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td style="text-align:right"><img src="login.jpg" /></td>
+      </tr>
+    </table>
+  </div>
+  <div id="left_bottom">
+    <div id="chengjiu">
+      <div id="wd1"><p style="text-align:center;font-weight:bold;color:#fa00fc;font-size:14px;">出道及巅峰，荣誉满身</p>
+      周杰伦凭着自己的才华，创作了无数经典作品，收获许多人的喜爱，演艺生涯上更是斩获了无数的奖项，如新人奖，人气奖，经典歌曲奖等等...<a href="../test.html">READ MORE</a>
+      </div>
+    </div>
+    <div id="chishan">
+    <div id="wd2"><p style="text-align:center;font-weight:bold;color:#fa00fc;font-size:14px;">始于才华，忠于人品</p>
+      人红是非多，外界的不良媒体一直造谣周杰伦汶川地震时才捐款几万，甚至是台独，事实上，周杰伦做了很多的慈善，自己也一直强调自己是中国人...<a href="../test.html">READ MORE</a>
+      </div>
+    </div>
+  </div>
+  <div id="right_bottom">
+  <a href="../test.html"><img src="huoqu.jpg" /></a>
+  </div>
+  
+  
+</div>
+<div style="border-bottom:5px solid #efefef;"></div>
+<div style="height:120px;border:1px solid white;background:#f6f6f6;">
+  <div id="other">
+    <div id="zixun">
+      <div id="zixun_wd">
+       <a href="#">新浪新闻</a> &nbsp;<a href="#">百度百科</a> &nbsp;<a href="#">凤凰新闻</a> &nbsp;<a href="#">台湾资讯</a></br>
+       <a href="#">娱乐天地</a> &nbsp;<a href="#">知乎资讯</a> &nbsp;<a href="#">八卦新闻</a> &nbsp;<a href="#">华语乐坛</a></br>
+      </div>
+    </div>
+    <div id="meiti">
+      <div id="meiti_wd">
+       <a href="#">网易音乐</a> &nbsp;<a href="#">新浪微博</a> &nbsp;<a href="#">百度视频</a> &nbsp;<a href="#">QQ音乐</a></br>
+       <a href="#">在线音乐</a> &nbsp;<a href="#">专辑试听</a> &nbsp;<a href="#">演唱现场</a> &nbsp;<a href="#">华语音乐</a></br>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div id="footer">
+  <div id="singer">
+    <table>
+    <caption>回首十年、经典之作</caption>
+      <tr>
+        <th>专辑名称</th><td>Jay</td><td>范特西</td><td>八度空间</td><td>叶惠美</td><td>七里香</td><td>十一月的萧邦</td><td>依然范特西</td>
+      </tr>
+      <tr>
+        <th>发行时间</th><td>2000-11-13</td><td>2001-09-14</td><td> 2002-07-19</td><td>2003-07-31</td><td>2008-08-03</td><td>2005-11-01</td><td>2006-09-05</td>
+      </tr>
+      <tr>
+        <th>专辑单曲</th>
+        <td>
+        <ol>
+        <li>可爱女人</li><li>完美主义</li><li>星晴</li><li>娘子</li><li>斗牛</li><li>黑色幽默</li><li>伊斯坦堡</li><li>印第安老斑鸠</li><li>龙卷风</li><li>反方向的钟</li>
+        </ol>
+        </td>
+        <td>
+        <ol>
+        <li>爱在西元前</li><li>爸我回来了</li><li>简单爱</li><li>忍者</li><li>开不了口</li><li>上海一九四三</li><li>对不起</li><li>威廉古堡</li><li>双截棍</li><li>安静</li>
+        </ol>
+        </td>
+        <td>
+        <ol>
+        <li>半兽人</li><li>半岛铁盒</li><li>暗号</li><li>龙拳</li><li>火车叨位去</li><li>分裂</li><li>爷爷泡的茶</li><li>回到过去</li><li>米兰的小铁匠</li><li>最后的战役</li>
+        </ol>
+        </td>
+        <td>
+        <ol>
+        <li>以父之名</li><li>儒夫</li><li>晴天</li><li>三年二班</li><li>东风破</li><li>你听得到</li><li>同一种调调</li><li>她的睫毛</li><li>爱情悬崖</li><li>梯田</li><li>双刀</li>
+        </ol>
+        </td>
+        <td>
+        <ol>
+        <li>我的地盘</li><li>七里香</li><li>借口</li><li>外婆</li><li>将军</li><li>搁浅</li><li>乱舞春秋</li><li>困兽之斗</li><li>园游会</li><li>止战之殇</li>
+        </ol>
+        </td>
+        <td>
+        <ol>
+        <li>夜曲</li><li>蓝色风暴</li><li>发如雪</li><li>黑色毛衣</li><li>四面楚歌</li><li>枫</li><li>浪漫手机</li><li>逆鳞</li><li>麦芽糖</li><li>珊瑚海</li><li>漂移</li><li>一路向北</li>
+        </ol>
+        </td>
+        <td>
+        <ol>
+        <li>夜的第七章 </li><li>听妈妈的话 </li><li>千里之外</li><li>本草纲目</li><li>退后</li><li>红模仿</li><li>心雨</li><li>白色风车</li><li>迷迭香</li><li>菊花台</li>
+        </ol>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div id="foot">
+ <p>作品：天蝎座</p>
+ <p>作品人：Rs、fyl</p>
+ <p>联系信息：QQ260308049 PHONE13570585762</p>
+ <p>详细地址：中华人民共和国广东省深圳市龙华新区共和新村a座120栋12楼122室</p>
+
+</div>
+</body>
+</html>
